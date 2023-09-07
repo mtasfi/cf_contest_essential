@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "CF Contest Essential",
+  "version": "1.0",
+  "description": "Fetch problem table and friends standing and show them on problem page",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://codeforces.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "c.png"
+  }
+  }
